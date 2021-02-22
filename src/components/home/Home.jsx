@@ -43,10 +43,11 @@ export const Home = () => {
           <img style={{ height: '500px', width:'100%' }} src={item.backPoster} alt={item.title} />
         </div>
         <div className='carousel-center'>
-          <i
+          {/* <i
+  
             className='far fa-play-circle'
             style={{ fontSize: 95, color: '#f4c10f' }}
-          ></i>
+          ></i> */}
         </div>
         <div
           className='carousel-caption'

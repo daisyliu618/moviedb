@@ -29,6 +29,12 @@ export function MovieDetail({ match }) {
 
   const MoviePlayerModal = (props) => {
     const youtubeUrl = 'https://www.youtube.com/watch?v=';
+   
+    // console.log(typeof(video.key));
+    // if (!video){
+    //   video.key = 'u4Tf7bLOErI';
+    // }
+    
     return (
       <Modal
         {...props}
@@ -36,6 +42,7 @@ export function MovieDetail({ match }) {
         aria-labelledby='contained-modal-title-vcenter'
         centered
       >
+
         <Modal.Header closeButton>
           <Modal.Title
             id='contained-modal-title-vcenter'
@@ -47,7 +54,7 @@ export function MovieDetail({ match }) {
         <Modal.Body style={{ backgroundColor: '#000000' }}>
           <ReactPlayer
             className='container-fluid'
-            url={youtubeUrl + video.key}
+            url={youtubeUrl + (video && video.key || 'u4Tf7bLOErI')}
             playing
             width='100%'
           ></ReactPlayer>
@@ -108,6 +115,8 @@ export function MovieDetail({ match }) {
       </div>
     );
   });
+
+  
 
   return (
     <div className='container'>

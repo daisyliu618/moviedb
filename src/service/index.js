@@ -131,14 +131,16 @@ export const fetchMovieDetail = async (id) => {
 
 export const fetchMovieVideos = async (id) => {
   try {
-    const { data } = await axios.get(`${movieUrl}/${id}/videos`, {
-      params: {
-        api_key: apiKey,
-      },
-    });
-    return data['results'][0];
-  } catch (error) {}
-};
+      const { data } = await axios.get(`${movieUrl}/${id}/videos`, {
+          params: {
+              api_key: apiKey,
+          }
+      });
+      return data['results'][0];
+  } catch (error) { }
+}
+
+
 export const fetchCasts = async (id) => {
   try {
     const { data } = await axios.get(`${movieUrl}/${id}/credits`, {
