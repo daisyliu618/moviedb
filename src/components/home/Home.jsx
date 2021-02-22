@@ -158,7 +158,7 @@ export const Home = () => {
       <div className='row mt-3'>
         <div className='col'>
           <div className='float-right'>
-            <i className='far fa-arrow-alt-circle-right'></i>
+            {/* <i className='far fa-arrow-alt-circle-right'></i> */}
           </div>
         </div>
       </div>
@@ -183,7 +183,7 @@ export const Home = () => {
       <div className='row mt-3'>
         <div className='col'>
           <div className='float-right'>
-            <i className='far fa-arrow-alt-circle-right'></i>
+            {/* <i className='far fa-arrow-alt-circle-right'></i> */}
           </div>
         </div>
       </div>
