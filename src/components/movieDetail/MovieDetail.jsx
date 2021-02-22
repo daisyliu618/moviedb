@@ -54,7 +54,7 @@ export function MovieDetail({ match }) {
         <Modal.Body style={{ backgroundColor: '#000000' }}>
           <ReactPlayer
             className='container-fluid'
-            url={youtubeUrl + (video && video.key || 'u4Tf7bLOErI')}
+            url={youtubeUrl + (video? video.key:'u4Tf7bLOErI')}
             playing
             width='100%'
           ></ReactPlayer>
