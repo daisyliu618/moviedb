@@ -204,6 +204,7 @@ export const Home = () => {
             of using Lorem Ipsum is that it has a more-or-less normal
             distribution of letters, as opposed to using 'Content here, content
           </p> */}
+          
           <ul className='list-inline'>
             <li className='list-inline-item'>
               <a href='/' style={{ color: '#f4c10f' }}>
